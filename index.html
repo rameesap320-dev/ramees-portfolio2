@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramees | Graphic Designer & Creative Studio</title>
+  <meta name="description" content="Ramees – Freelance Graphic Designer specializing in logo design, branding, social media posters, and flyers. Mindframes Design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 3D Perspective Grid Background & Ambient Lighting Spheres -->
+  <div class="bg-grid-3d"></div>
+  <div class="glow-sphere sphere-1"></div>
+  <div class="glow-sphere sphere-2"></div>
+  <div class="glow-sphere sphere-3"></div>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ========== NAV ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="#hero">
+        <img src="mind_frame_logo.jpg" alt="Mindframes Design" class="logo-img-nav" />
+      </a>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="admin-btn" id="adminBtn" aria-label="Admin Portal">
+        <i class="fa-solid fa-user-lock"></i>
+      </button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    
+    <!-- Floating background Adobe icons -->
+    <div class="floating-icons-container">
+      <div class="floating-adobe-icon adobe-ps">
+        <span class="adobe-text">Ps</span>
+      </div>
+      <div class="floating-adobe-icon adobe-ai">
+        <span class="adobe-text">Ai</span>
+      </div>
+      <div class="floating-adobe-icon adobe-id">
+        <span class="adobe-text">Id</span>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Freelance
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line slide-left">Hi, I'm <span class="gradient-text">Ramees</span></span>
+        <span class="title-line slide-right">Graphic</span>
+        <span class="title-line slide-left"><span class="outline-text">Designer</span></span>
+      </h1>
+      <p class="hero-desc">Crafting visually stunning brand identities, logos, social media graphics & print designs that make brands truly stand out.</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="20">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Tools Mastered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-eye"></i> View Work
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring ring1"></div>
+        <div class="avatar-ring ring2"></div>
+        <div class="avatar-ring ring3"></div>
+        <div class="avatar-glow"></div>
+        <img src="ramees.jpg.jpeg" alt="Ramees – Graphic Designer" class="avatar-img" />
+      </div>
+      <div class="floating-card-wrapper wrapper1">
+        <div class="floating-card card1">
+          <i class="fa-solid fa-pen-nib"></i>
+          <span>Logo Design</span>
+        </div>
+      </div>
+      <div class="floating-card-wrapper wrapper2">
+        <div class="floating-card card2">
+          <i class="fa-solid fa-palette"></i>
+          <span>Branding</span>
+        </div>
+      </div>
+      <div class="floating-card-wrapper wrapper3">
+        <div class="floating-card card3">
+          <i class="fa-solid fa-layer-group"></i>
+          <span>Social Media</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills" id="skills">
+    <canvas id="skillsCanvas"></canvas>
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+        <p class="section-desc">Industry-standard tools and creative competencies that power every design.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Design Tools -->
+        <div class="skills-col" data-reveal>
+          <h3 class="skills-col-title"><i class="fa-solid fa-toolbox"></i> Design Tools</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop" class="skill-icon-img" />
+                <span>Adobe Photoshop</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator" class="skill-icon-img" />
+                <span>Adobe Illustrator</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Adobe_InDesign_CC_icon.svg" alt="InDesign" class="skill-icon-img" />
+                <span>Adobe InDesign</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-vector-square skill-icon"></i>
+                <span>CorelDRAW</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <i class="fa-solid fa-wand-magic-sparkles skill-icon"></i>
+                <span>Canva</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+              <span class="skill-percent">92%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creative Skills -->
+        <div class="skills-col" data-reveal>
+          <h3 class="skills-col-title"><i class="fa-solid fa-brain"></i> Creative Skills</h3>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <span>Creative Thinking</span>
+            </div>
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fa-solid fa-clock"></i></div>
+              <span>Time Management</span>
+            </div>
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+              <span>Adaptability</span>
+            </div>
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fa-solid fa-eye"></i></div>
+              <span>Visual Storytelling</span>
+            </div>
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+              <span>Brand Identity</span>
+            </div>
+            <div class="soft-skill-card">
+              <div class="soft-skill-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              <span>Trend Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specializations -->
+      <div class="specializations" data-reveal>
+        <div class="spec-card">
+          <div class="spec-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h4>Logo Design</h4>
+          <p>Timeless, scalable logos that capture brand essence</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon"><i class="fa-solid fa-swatchbook"></i></div>
+          <h4>Branding</h4>
+          <p>Complete brand identity systems that tell your story</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon"><i class="fa-brands fa-instagram"></i></div>
+          <h4>Social Media</h4>
+          <p>Scroll-stopping visuals for maximum engagement</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon"><i class="fa-solid fa-print"></i></div>
+          <h4>Print Design</h4>
+          <p>Professional flyers, posters, and print collateral</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-desc">A glimpse into my design work — crafted with passion and precision.</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Card 1: Logo & Brand Identity Suite -->
+        <div class="project-card featured-suite-card" data-suite="branding" data-reveal style="cursor: pointer;">
+          <div class="project-img-wrap" style="aspect-ratio: 4/3;">
+            <img src="mind_frame_logo.jpg" alt="Branding & Logo Design Showcase" class="project-img" />
+            <div class="project-overlay" style="opacity: 1; background: linear-gradient(to top, rgba(3,7,4,0.95) 0%, rgba(22,163,74,0.15) 100%);">
+              <div class="overlay-content" style="width: 100%;">
+                <span class="project-tag">Case Study Suite</span>
+                <h3>Logo &amp; Brand Identity Showcase</h3>
+                <p>An interactive portfolio combining featured branding and custom logo design projects.</p>
+                <a href="#" class="overlay-btn project-suite-trigger" data-suite="branding">Explore 5 Projects <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="proj-cat">Combined Showcase</span>
+            <h3 class="proj-title">Logo &amp; Brand Identity Suite</h3>
+          </div>
+        </div>
+
+        <!-- Card 2: Social Media Posters Suite -->
+        <div class="project-card featured-suite-card" data-suite="posters" data-reveal style="cursor: pointer;">
+          <div class="project-img-wrap" style="aspect-ratio: 4/3;">
+            <img src="shirt.jpg.jpg" alt="Social Media Posters Showcase" class="project-img" />
+            <div class="project-overlay" style="opacity: 1; background: linear-gradient(to top, rgba(3,7,4,0.95) 0%, rgba(22,163,74,0.15) 100%);">
+              <div class="overlay-content" style="width: 100%;">
+                <span class="project-tag">Social Media Posters</span>
+                <h3>Social Media Posters Showcase</h3>
+                <p>A collection of scroll-stopping product posters, festive creatives, and corporate marketing campaigns.</p>
+                <a href="#" class="overlay-btn project-suite-trigger" data-suite="posters">Explore 5 Posters <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="proj-cat">Poster Suite</span>
+            <h3 class="proj-title">Social Media Posters Showcase</h3>
+          </div>
+        </div>
+        <!-- Card 3: Product Posters Suite -->
+        <div class="project-card featured-suite-card product-parallax-card" data-suite="products" data-reveal style="cursor: pointer;">
+          <div class="project-img-wrap" style="aspect-ratio: 4/3; position: relative; overflow: hidden;">
+            <img src="LIPSTICK.jpg.jpg" alt="Product Posters Showcase" class="project-img parallax-img" style="object-fit: cover;" />
+            <div class="project-overlay" style="opacity: 1; background: linear-gradient(to top, rgba(3,7,4,0.95) 0%, rgba(22,163,74,0.15) 100%);">
+              <div class="overlay-content" style="width: 100%;">
+                <span class="project-tag">Product Posters</span>
+                <h3>Product Posters Showcase</h3>
+                <p>A stunning showcase of premium product marketing designs, specifications layouts, and roll-on creatives.</p>
+                <a href="#" class="overlay-btn project-suite-trigger" data-suite="products">Explore 5 Posters <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="proj-cat">Poster Suite</span>
+            <h3 class="proj-title">Product Posters Showcase</h3>
+          </div>
+        </div>
+      </div>
+      <div class="projects-cta" data-reveal>
+        <a href="#contact" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Hire Me for Your Project
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        <p class="section-desc">Creative solutions tailored to elevate your brand to the next level.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-reveal>
+          <div class="service-number">01</div>
+          <div class="service-icon"><i class="fa-solid fa-pen-nib"></i></div>
+          <h3>Logo Design</h3>
+          <p>Custom, memorable logos that reflect your brand's personality and leave a lasting impression.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Multiple concepts</li>
+            <li><i class="fa-solid fa-check"></i> Vector files (AI, EPS, SVG)</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited revisions</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card featured-service" data-reveal>
+          <div class="service-badge">Popular</div>
+          <div class="service-number">02</div>
+          <div class="service-icon"><i class="fa-solid fa-swatchbook"></i></div>
+          <h3>Brand Identity</h3>
+          <p>Complete branding packages with logo, colors, typography, and brand guideline documentation.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Logo + color palette</li>
+            <li><i class="fa-solid fa-check"></i> Typography system</li>
+            <li><i class="fa-solid fa-check"></i> Brand guidelines PDF</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-reveal>
+          <div class="service-number">03</div>
+          <div class="service-icon"><i class="fa-brands fa-instagram"></i></div>
+          <h3>Social Media Design</h3>
+          <p>Scroll-stopping posts, stories, and reels covers that boost your brand presence online.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Post & story templates</li>
+            <li><i class="fa-solid fa-check"></i> Brand-consistent design</li>
+            <li><i class="fa-solid fa-check"></i> Ready-to-post files</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-reveal>
+          <div class="service-number">04</div>
+          <div class="service-icon"><i class="fa-solid fa-print"></i></div>
+          <h3>Print Design</h3>
+          <p>Professional flyers, posters, banners, and brochures crafted for maximum visual impact.</p>
+          <ul class="service-features">
+            <li><i class="fa-solid fa-check"></i> Print-ready files</li>
+            <li><i class="fa-solid fa-check"></i> CMYK color mode</li>
+            <li><i class="fa-solid fa-check"></i> Multiple sizes</li>
+          </ul>
+          <a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-desc">Have a project in mind? Let's create something amazing together!</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info" data-reveal>
+          <h3>Let's work together</h3>
+          <p>I'm always open to new opportunities, collaborations, and exciting design challenges. Reach out and let's bring your vision to life!</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div>
+                <span class="contact-label">Instagram</span>
+                <a href="https://www.instagram.com/mindframes.design" target="_blank" class="contact-value">@mindframes.design</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:sydramees2001@gmail.com" class="contact-value">sydramees2001@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Kerala, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/mindframes.design" target="_blank" class="social-btn" id="instagram-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/" target="_blank" class="social-btn" id="whatsapp-link">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="mailto:sydramees2001@gmail.com" class="social-btn" id="email-link">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap" data-reveal>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="logo">Logo Design</option>
+                <option value="branding">Brand Identity</option>
+                <option value="social">Social Media Design</option>
+                <option value="print">Print Design</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="submitBtn">
+              <span id="btnText"><i class="fa-solid fa-paper-plane"></i> Send Message</span>
+              <span id="btnLoading" style="display:none"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+            </button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="mind_frame_logo.jpg" alt="Mindframes Design" class="logo-img-footer" />
+      </div>
+      <p class="footer-copy">© 2025 <strong>Ramees</strong> · Mindframes Design · Crafted with ❤️ in Kerala</p>
+      <div class="footer-socials">
+        <a href="https://www.instagram.com/mindframes.design" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:sydramees2001@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== LIGHTBOX MODAL ========== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous project"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next project"><i class="fa-solid fa-chevron-right"></i></button>
+      
+      <!-- Grid collage view of all suite items -->
+      <div class="lightbox-grid-container" id="lightboxGridContainer">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+
+      <!-- Single expanded view of a selected item -->
+      <div class="lightbox-body" id="lightboxBody">
+        <div class="lightbox-img-container" id="lightboxImgContainer">
+          <img src="" alt="" id="lightboxImg" class="lightbox-img" />
+        </div>
+        <div class="lightbox-info">
+          <button class="lightbox-back-btn" id="lightboxBackToGrid" aria-label="Back to gallery"><i class="fa-solid fa-arrow-left"></i> Back to Gallery</button>
+          <span class="lightbox-tag" id="lightboxTag">Category</span>
+          <h3 class="lightbox-title" id="lightboxTitle">Project Title</h3>
+          <p class="lightbox-desc" id="lightboxDesc">Project description goes here...</p>
+          <div class="lightbox-counter" id="lightboxCounter">1 / 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ADMIN LOGIN MODAL ========== -->
+  <div class="admin-modal-overlay" id="adminLoginModal">
+    <div class="admin-modal-panel glassmorphism">
+      <button class="admin-modal-close" id="loginModalClose"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div id="loginFormView">
+        <div class="admin-modal-header">
+          <i class="fa-solid fa-user-shield admin-portal-icon"></i>
+          <h2>Admin Access</h2>
+          <p>Sign in to manage your portfolio works</p>
+        </div>
+        <form id="adminLoginForm" class="admin-form">
+          <div class="form-group">
+            <label for="adminEmail">Email Address</label>
+            <input type="email" id="adminEmail" required placeholder="name@domain.com" />
+          </div>
+          <div class="form-group">
+            <label for="adminPassword">Password</label>
+            <input type="password" id="adminPassword" required placeholder="••••••••" />
+          </div>
+          <div class="form-footer-actions">
+            <a href="#" id="forgotPasswordLink" class="admin-link-secondary">Forgot Password?</a>
+          </div>
+          <div class="admin-alert error-alert" id="loginErrorAlert" style="display: none;"></div>
+          <div class="admin-alert success-alert" id="loginSuccessAlert" style="display: none;"></div>
+          <button type="submit" class="btn btn-primary full-width">Sign In</button>
+        </form>
+      </div>
+
+      <!-- First Time Setup View -->
+      <div id="setupFormView" style="display: none;">
+        <div class="admin-modal-header">
+          <i class="fa-solid fa-wand-magic-sparkles admin-portal-icon"></i>
+          <h2>First-Time Setup</h2>
+          <p>Create your local admin credentials</p>
+        </div>
+        <form id="adminSetupForm" class="admin-form">
+          <div class="form-group">
+            <label for="setupEmail">Admin Email</label>
+            <input type="email" id="setupEmail" required placeholder="name@domain.com" />
+          </div>
+          <div class="form-group">
+            <label for="setupPassword">Create Password (min. 6 chars)</label>
+            <input type="password" id="setupPassword" required placeholder="••••••••" minlength="6" />
+          </div>
+          <div class="admin-alert error-alert" id="setupErrorAlert" style="display: none;"></div>
+          <button type="submit" class="btn btn-primary full-width">Create Credentials</button>
+        </form>
+      </div>
+
+      <!-- Forgot Password View -->
+      <div id="forgotFormView" style="display: none;">
+        <div class="admin-modal-header">
+          <i class="fa-solid fa-key admin-portal-icon"></i>
+          <h2>Reset Password</h2>
+          <p>Send a secure reset link to your email</p>
+        </div>
+        <form id="adminForgotForm" class="admin-form">
+          <div class="form-group">
+            <label for="forgotEmail">Email Address</label>
+            <input type="email" id="forgotEmail" required placeholder="name@domain.com" />
+          </div>
+          <div class="admin-alert error-alert" id="forgotErrorAlert" style="display: none;"></div>
+          <div class="admin-alert success-alert" id="forgotSuccessAlert" style="display: none;"></div>
+          <button type="submit" class="btn btn-primary full-width">Send Reset Link</button>
+          <button type="button" id="backToLoginBtn" class="btn btn-ghost full-width" style="margin-top: 0.8rem;">Back to Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ADMIN DASHBOARD MODAL ========== -->
+  <div class="admin-modal-overlay" id="adminDashboardModal">
+    <div class="admin-dashboard-panel glassmorphism">
+      <div class="admin-dashboard-header">
+        <div class="header-logo-section">
+          <img src="mind_frame_logo.jpg" alt="Mindframes" class="dashboard-logo" />
+          <div>
+            <h2>Mindframes Portfolio Manager</h2>
+            <span id="authStatusText" class="auth-status-badge">Connected: Local Database</span>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn-primary" id="openAddProjectBtn"><i class="fa-solid fa-plus"></i> Add New Work</button>
+          <button class="btn btn-ghost" id="openSettingsBtn"><i class="fa-solid fa-cog"></i> Settings</button>
+          <button class="btn btn-ghost" id="adminLogoutBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign Out</button>
+          <button class="admin-modal-close-dash" id="dashboardClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <div class="dashboard-tabs">
+        <button class="dash-tab active" data-tab="branding">Branding & Logo</button>
+        <button class="dash-tab" data-tab="posters">Social Media Posters</button>
+        <button class="dash-tab" data-tab="products">Product Posters</button>
+      </div>
+
+      <div class="admin-dashboard-content">
+        <div class="projects-list-table">
+          <div class="table-header-row">
+            <div class="col-img">Preview</div>
+            <div class="col-title">Title</div>
+            <div class="col-tag">Tag / Category</div>
+            <div class="col-desc">Description</div>
+            <div class="col-actions">Actions</div>
+          </div>
+          <div id="adminProjectsList" class="projects-list-body">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PROJECT FORM MODAL (SUB-MODAL) ========== -->
+  <div class="admin-modal-overlay sub-modal" id="projectFormModal">
+    <div class="admin-modal-panel project-form-panel glassmorphism">
+      <button class="admin-modal-close" id="projectFormClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="admin-modal-header">
+        <i class="fa-solid fa-file-pen admin-portal-icon"></i>
+        <h2 id="projectFormTitle">Add New Portfolio Work</h2>
+        <p>Input details below to display your work instantly</p>
+      </div>
+      <form id="projectForm" class="admin-form">
+        <input type="hidden" id="editProjectId" />
+        
+        <div class="form-row-admin">
+          <div class="form-group">
+            <label for="projectCategory">Category Suite</label>
+            <select id="projectCategory" required>
+              <option value="branding">Branding & Logo Design</option>
+              <option value="posters">Social Media Posters</option>
+              <option value="products">Product Posters</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="projectTag">Tag Label</label>
+            <input type="text" id="projectTag" placeholder="e.g. Brand Identity, Logo Design" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="projectName">Project Title</label>
+          <input type="text" id="projectName" placeholder="e.g. Berry Juice Factory Logo" required />
+        </div>
+
+        <div class="form-group">
+          <label>Image Source</label>
+          <div class="image-source-options">
+            <label class="radio-label">
+              <input type="radio" name="imgSrcType" value="url" checked /> External Image URL
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="imgSrcType" value="file" /> Upload File (JPEG/PNG)
+            </label>
+          </div>
+          <div id="imgUrlGroup" class="src-group">
+            <input type="text" id="projectImgUrl" placeholder="https://example.com/image.jpg" />
+          </div>
+          <div id="imgFileGroup" class="src-group" style="display: none;">
+            <div class="file-drop-area" id="fileDropArea">
+              <i class="fa-solid fa-cloud-arrow-up"></i>
+              <span>Drag & drop or click to browse</span>
+              <input type="file" id="projectImgFile" accept="image/*" />
+            </div>
+            <div id="fileUploadPreview" class="file-preview-wrap" style="display: none;">
+              <img id="filePreviewImg" src="" alt="Upload Preview" />
+              <button type="button" class="btn btn-ghost" id="removeFileBtn">Remove File</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="projectDescription">Project Description</label>
+          <textarea id="projectDescription" placeholder="Write a description for your case study..." required rows="4"></textarea>
+        </div>
+
+        <div class="admin-alert error-alert" id="projectFormErrorAlert" style="display: none;"></div>
+        <button type="submit" class="btn btn-primary full-width" id="submitProjectBtn">Save Project</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== DATABASE CONFIGURATION SETTINGS MODAL ========== -->
+  <div class="admin-modal-overlay sub-modal" id="dbSettingsModal">
+    <div class="admin-modal-panel glassmorphism">
+      <button class="admin-modal-close" id="dbSettingsClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="admin-modal-header">
+        <i class="fa-solid fa-database admin-portal-icon"></i>
+        <h2>Cloud Database Settings</h2>
+        <p>Connect your portfolio to secure Firebase Cloud Storage</p>
+      </div>
+      <form id="firebaseConfigForm" class="admin-form">
+        <div class="form-group">
+          <label for="fbApiKey">API Key</label>
+          <input type="password" id="fbApiKey" placeholder="AIzaSy..." />
+        </div>
+        <div class="form-row-admin">
+          <div class="form-group">
+            <label for="fbAuthDomain">Auth Domain</label>
+            <input type="text" id="fbAuthDomain" placeholder="my-app.firebaseapp.com" />
+          </div>
+          <div class="form-group">
+            <label for="fbProjectId">Project ID</label>
+            <input type="text" id="fbProjectId" placeholder="my-app-id" />
+          </div>
+        </div>
+        <div class="form-row-admin">
+          <div class="form-group">
+            <label for="fbStorageBucket">Storage Bucket</label>
+            <input type="text" id="fbStorageBucket" placeholder="my-app.appspot.com" />
+          </div>
+          <div class="form-group">
+            <label for="fbAppId">App ID</label>
+            <input type="text" id="fbAppId" placeholder="1:23456789:web:abcd1234" />
+          </div>
+        </div>
+        <div class="admin-alert info-alert">
+          <i class="fa-solid fa-circle-info"></i>
+          <span>Enabling Firebase secures data on Google Cloud servers, allowing access across all browsers. Leaving these blank keeps database local on this browser.</span>
+        </div>
+        <div class="admin-alert success-alert" id="dbSettingsSuccessAlert" style="display: none;"></div>
+        <button type="submit" class="btn btn-primary full-width">Connect &amp; Restart</button>
+        <button type="button" id="disconnectDbBtn" class="btn btn-ghost full-width" style="margin-top: 0.8rem; border-color: rgba(239, 68, 68, 0.4); color: #ef4444;">Disconnect &amp; Use Local</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Firebase App & Auth & Firestore (Compat Version) -->
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
