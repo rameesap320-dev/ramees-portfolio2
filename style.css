@@ -50,6 +50,25 @@ ul { list-style: none; }
   transition: transform 0.12s, width 0.2s, height 0.2s;
 }
 
+/* Ambient Cursor Spotlight Glow */
+.ambient-glow {
+  position: fixed;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(0, 255, 135, 0.09) 0%, rgba(22, 163, 74, 0.02) 45%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 19998; /* Just below cursor rings */
+  transform: translate(-50%, -50%);
+  transition: opacity 0.6s ease;
+  opacity: 0;
+  mix-blend-mode: screen;
+  will-change: left, top;
+}
+body.mouse-moving .ambient-glow {
+  opacity: 1;
+}
+
 /* ===== NAVBAR ===== */
 .navbar {
   position: fixed; top:0; left:0; width:100%;
@@ -1739,6 +1758,12 @@ ul { list-style: none; }
   .adobe-ps { top: 22%; left: 4%; }
   .adobe-ai { top: 35%; right: 4%; }
   .adobe-id { top: 78%; left: 8%; }
+}
+
+/* ===== NEON GREEN LIGHT HIGHLIGHTS ON HOVER ===== */
+.btn-primary:hover, .btn-ghost:hover, .project-card:hover, .service-card:hover, .spec-card:hover, .soft-skill-card:hover, .skills-col:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 135, 0.22) !important;
+  border-color: rgba(0, 255, 135, 0.45) !important;
 }
 
 

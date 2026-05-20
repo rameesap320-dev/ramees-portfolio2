@@ -1,13 +1,36 @@
 /* ===== JAVASCRIPT ===== */
 
-// Custom Cursor
+// Custom Cursor & Ambient Spotlight Glow
 const dot = document.getElementById('cursorDot');
 const ring = document.getElementById('cursorRing');
 let mx = 0, my = 0, rx = 0, ry = 0;
-document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.left = mx+'px'; dot.style.top = my+'px'; });
+
+// Inject ambient spotlight glow overlay
+const ambientGlow = document.createElement('div');
+ambientGlow.className = 'ambient-glow';
+document.body.appendChild(ambientGlow);
+let gx = 0, gy = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX;
+  my = e.clientY;
+  dot.style.left = mx+'px';
+  dot.style.top = my+'px';
+  document.body.classList.add('mouse-moving');
+});
+
+document.addEventListener('mouseleave', () => {
+  document.body.classList.remove('mouse-moving');
+});
+
 function animRing() {
   rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
   ring.style.left = rx+'px'; ring.style.top = ry+'px';
+  
+  gx += (mx - gx) * 0.08; gy += (my - gy) * 0.08;
+  ambientGlow.style.left = gx+'px';
+  ambientGlow.style.top = gy+'px';
+  
   requestAnimationFrame(animRing);
 }
 animRing();
