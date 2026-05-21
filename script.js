@@ -35,8 +35,8 @@ function animRing() {
 }
 animRing();
 document.querySelectorAll('a,button,.filter-btn,.project-card,.service-card,.soft-skill-card').forEach(el => {
-  el.addEventListener('mouseenter', () => { ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(0,255,135,0.8)'; });
-  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,255,135,0.5)'; });
+  el.addEventListener('mouseenter', () => { ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(13,205,102,0.8)'; });
+  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(13,205,102,0.5)'; });
 });
 
 // Navbar scroll
@@ -83,7 +83,7 @@ class Particle {
     this.vx = (Math.random() - 0.5) * 0.4;
     this.vy = (Math.random() - 0.5) * 0.4;
     this.alpha = Math.random() * 0.6 + 0.1;
-    this.color = Math.random() > 0.5 ? '0,255,135' : '16,185,129';
+    this.color = Math.random() > 0.5 ? '13,205,102' : '16,185,129';
   }
   update() {
     this.x += this.vx; this.y += this.vy;
@@ -203,7 +203,7 @@ form.addEventListener('submit', e => {
     btnText.style.display = 'inline-flex';
     btnLoading.style.display = 'none';
     formNote.textContent = '✅ Message sent! I\'ll get back to you soon.';
-    formNote.style.color = '#00ff87';
+    formNote.style.color = '#0dcd66';
     form.reset();
     setTimeout(() => formNote.textContent = '', 4000);
   }, 1800);
@@ -298,10 +298,10 @@ function renderGridThumbnails() {
     
     // Custom cursor hovers
     gridItem.addEventListener('mouseenter', () => {
-      ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(0,255,135,0.8)';
+      ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(13,205,102,0.8)';
     });
     gridItem.addEventListener('mouseleave', () => {
-      ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,255,135,0.5)';
+      ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(13,205,102,0.5)';
     });
 
     lightboxGridContainer.appendChild(gridItem);
@@ -539,16 +539,16 @@ if (lightboxBackToGrid) {
     switchLightboxMode('grid');
   });
   lightboxBackToGrid.addEventListener('mouseenter', () => {
-    ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(0,255,135,0.8)';
+    ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(13,205,102,0.8)';
   });
   lightboxBackToGrid.addEventListener('mouseleave', () => {
-    ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,255,135,0.5)';
+    ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(13,205,102,0.5)';
   });
 }
 // Add cursor ring hover indicators for lightbox elements
 document.querySelectorAll('.lightbox-close, .lightbox-nav, .project-suite-trigger, .featured-suite-card').forEach(el => {
-  el.addEventListener('mouseenter', () => { ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(0,255,135,0.8)'; });
-  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,255,135,0.5)'; });
+  el.addEventListener('mouseenter', () => { ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(13,205,102,0.8)'; });
+  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(13,205,102,0.5)'; });
 });
 
 // Interactive 3D Card Tilt Effect
@@ -574,8 +574,8 @@ document.querySelectorAll('.featured-suite-card').forEach(card => {
 
 // Add cursor ring hover indicators for lightbox and carousel elements
 document.querySelectorAll('.lightbox-close, .lightbox-nav, .project-suite-trigger, .featured-suite-card, .carousel-arrow').forEach(el => {
-  el.addEventListener('mouseenter', () => { ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(0,255,135,0.8)'; });
-  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,255,135,0.5)'; });
+  el.addEventListener('mouseenter', () => { ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(13,205,102,0.8)'; });
+  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(13,205,102,0.5)'; });
 });
 
 // Add fade-in keyframe
@@ -1085,8 +1085,8 @@ function renderDashboardProjects() {
     
     // Add custom cursor triggers
     row.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('mouseenter', () => { ring.style.width='46px'; ring.style.height='46px'; ring.style.borderColor='rgba(0,255,135,0.8)'; });
-      btn.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,255,135,0.5)'; });
+      btn.addEventListener('mouseenter', () => { ring.style.width='46px'; ring.style.height='46px'; ring.style.borderColor='rgba(13,205,102,0.8)'; });
+      btn.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(13,205,102,0.5)'; });
     });
     
     row.querySelector('.btn-row-edit').addEventListener('click', () => openEditProjectForm(proj.id));
@@ -1373,8 +1373,8 @@ if (disconnectDbBtn) {
 
 // Bind custom cursor rings for new interactive admin elements
 document.querySelectorAll('#adminBtn, .admin-modal-close, .admin-modal-close-dash, .dash-tab, .btn-ghost, .btn-primary').forEach(el => {
-  el.addEventListener('mouseenter', () => { ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(0,255,135,0.8)'; });
-  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(0,255,135,0.5)'; });
+  el.addEventListener('mouseenter', () => { ring.style.width='52px'; ring.style.height='52px'; ring.style.borderColor='rgba(13,205,102,0.8)'; });
+  el.addEventListener('mouseleave', () => { ring.style.width='36px'; ring.style.height='36px'; ring.style.borderColor='rgba(13,205,102,0.5)'; });
 });
 
 // Initial session verification check
@@ -1549,7 +1549,7 @@ if (skillsCanvas) {
       
       sCtx.beginPath();
       sCtx.arc(p.x, p.y, radius, 0, Math.PI * 2);
-      sCtx.fillStyle = `rgba(0, 255, 135, ${alpha})`;
+      sCtx.fillStyle = `rgba(13, 205, 102, ${alpha})`;
       sCtx.fill();
     }
     
@@ -1558,5 +1558,6 @@ if (skillsCanvas) {
   
   requestAnimationFrame(animateSkillsCanvas);
 }
+
 
 
